@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/delete.css">
+    <title>Create User</title>
+</head>
+<body>
+    <div class="signup-box">
+        <h1>Delete User Page</h1>
+        <h4>Please Check Out Database User ID!</h4>
+        <form method="POST" action="/api/deleteuser">
+            <label>Please Enter ID</label>
+            <input type="text" name="id" placeholder="">
+            <input type="submit" value="DELETE">
+        </form>
+        <p>By Clicking the Delete Button, You will Delete User<br> 
+        <a href="/dashboard">Back to Dashboard</a> and <a href="/game">Click Here to Play!</a>
+        </p>
+    </div>
+    <p class="para-2">Already have an Account? <a href="/login">Login Here</a></p>
+
+</body>
+</html>

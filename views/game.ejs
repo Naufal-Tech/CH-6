@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="/css/style-game.css">
+
+    
+    <!--Title-->
+    <title>Gunting Kertas Batu</title>
+    <link rel="icon" href="/img/asset-game/simbol.png">
+</head>
+
+<body class="transition">
+
+    <!--Navigation-->
+    <header>
+        <div class="back">
+            <h1>
+                <a href="/dashboard"><img src="/img/asset-game/back.jpg" alt="HTML" style="width:200px" id="wrapper">
+                </a>
+            </h1>
+        </div>
+        <div class="brand">
+            <img src="/img/asset-game/simbol.png">
+            <h1>Gunting Batu Kertas (By Naufal)</h1>
+        </div>
+        <div class="logout-btn">
+             <a href="/logout" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-log-out"></span> Log out
+            </a>
+        </div>
+    </header>
+    <!--End of Navigation-->
+
+    <!--Game-->
+    <div class="container">
+
+        <div class="wrapper" id="app">
+            <div class="scoreboard"> 
+                <div class="title">
+                    <img src='/img/asset-game/title.png' />
+                </div>
+                <div class="score">
+                    <p>SCORE</p>
+                    <h1> 0 </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro">
+            <button class="fadeButton" value="fadeOut" id="mybutton" onchange="showButton()">Let's Play</button>
+        </div>
+
+    <div class="test" id="coba"> 
+
+        <div class="move">
+            <div class="umove fadeOut">
+                <h1 id="action">Make Your Move!</h1>
+            </div>
+        </div>
+
+        <div class="gamebox fadeOut" id="game">
+
+            <!--Human-->
+            <div class="user-choice">
+                <h1 class="player-name">PLAYER</h1>
+                <div class="used">
+                    <button class="user-tool your-tool dissap button" id="r-u">
+                        <img class="tool" src="/img/asset-game/Rock.png" alt="my-image-here">
+                    </button>
+                    <button class="user-tool your-tool dissap button" id="p-u">
+                        <img class="tool" src="/img/asset-game/Paper.png" alt="my-image-here">
+                    </button>
+                    <button class="user-tool your-tool dissap button" id="s-u">
+                        <img class="tool" src="/img/asset-game/Scissors.png" alt="my-image-here">
+                    </button>
+                </div>
+            </div>
+            <!--End of Human-->
+
+            <!--Box Result-->
+            <div class="Versus-Reset">
+                <div class="boxR" id="box">
+                    <h1 class="woy" id="h1">VS</h1>
+                </div>
+
+                <!--For Refresh-->
+                <div class="refresh">
+                    <img id="refresh" src="/img/asset-game/refresh.png">
+                </div>
+            </div>
+            <!--End of Box Result-->
+
+            <!--Com Play-->
+            <div class="Com-Choice">
+                <h1 class="player-name">COM</h1>
+                <div class="used">
+                    <button class="user-tool dissap comp" id="r-c">
+                        <img src="/img/asset-game/Rock.png" alt="my-image-here" >
+                    </button>
+
+                    <button class="user-tool dissap comp" id="p-c">
+                        <img src="/img/asset-game/Paper.png" alt="my-image-here" >
+                    </button>
+
+                    <button class="user-tool dissap comp" id="s-c">
+                        <img src="/img/asset-game/Scissors.png" alt="my-image-here" >
+                    </button>
+                </div>
+            </div>
+            <!--End of Com Play-->
+        </div>
+    </div>
+    </div>
+<!--End of Game-->
+
+
+<!-- JS --> 
+    <script defer src="/js/script.js"></script>
+</body>
+</html>

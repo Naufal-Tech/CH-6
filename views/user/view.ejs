@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/tabel.css"/>
+</head>
+
+   <table class="table">
+     <thead>
+     	<tr>
+     	 <th>ID User</th>
+     	 <th>Username</th>
+     	 <th>Password</th>
+     	</tr>
+     </thead>
+     <tbody>
+      <% for (var i=0; i<data.length ; i++) { %>
+        <tr>
+          <th><%= data[i].id %></th>
+          <th><%= data[i].username %></th>
+          <th><%= data[i].password %></th>
+        </tr>
+      <% } %>
+     </tbody>
+   </table>
+        <button type="button" onclick="document.location='/dashboard'">Back to dashboard</button>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Dela+Gothic+One&family=Lobster&family=Merriweather:wght@300;400;900&family=Roboto:wght@100;400&display=swap');
+
+body{
+    font-family: Roboto;
+    min-height: 100vh;
+    background-color: blueviolet;
+}
+
+#error{
+    position: fixed;
+    top: 20%;
+    left: 40%;
+
+}
+
+.popup-content{
+    width: 326px;
+    height: 486px; 
+    background: white;
+    box-shadow: 4px 4px 70px 10px rgb(yellow);
+}
+
+.imgbox{
+    text-align: center;
+}
+
+.img{
+    width: 112px;
+    margin-top: 40px;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.05px;
+    text-align: center;
+    margin: auto;
+}
+
+#error .title{
+    color:red;
+}
+
+.para{
+    font-weight: 400;
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: auto;
+}
+
+.button{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 50px;
+}
+
+#e_button{
+    background: red;
+}
